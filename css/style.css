@@ -1,0 +1,4014 @@
+@import "compass/css3";
+@font-face {
+    font-family: "bebasNeue";
+    src: url("../fonts/bebas-neue/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "bebasNeue_bold";
+    src: url("../fonts/bebas-neue/BebasNeue Bold.otf");
+}
+
+@font-face {
+    font-family: 'Avenir_Black';
+    src: url('../fonts/Avenir/Avenir-Black.eot');
+    src: url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Black.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Book';
+    src: url('../fonts/Avenir/Avenir-Book.eot');
+    src: url('../fonts/Avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Book.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Book.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Book.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Book.svg#Avenir-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_BookOblique';
+    src: url('../fonts/Avenir/Avenir-BookOblique.eot');
+    src: url('../fonts/Avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-BookOblique.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-BookOblique.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-BookOblique.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Light';
+    src: url('../fonts/Avenir/Avenir-Light.eot');
+    src: url('../fonts/Avenir/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Light.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Light.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Light.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Light.svg#Avenir-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Medium';
+    src: url('../fonts/Avenir/Avenir-Medium.eot');
+    src: url('../fonts/Avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Medium.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Medium.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_bold_NextLTPro';
+    src: url('../fonts/Avenir/AvenirLTPro-Black.eot');
+    src: url('../fonts/Avenir/AvenirLTPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirLTPro-Black.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirLTPro-Black.woff') format('woff'),
+        url('../fonts/Avenir/AvenirLTPro-Black.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirLTPro-Black.svg#AvenirLTPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_boldCN_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-BoldCn.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCn.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCn.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCn.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCn.svg#AvenirNextLTPro-BoldCn') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_BoldCnIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-BoldCnIt.svg#AvenirNextLTPro-BoldCnIt') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Cn_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Cn.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-Cn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Cn.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-Cn.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-Cn.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Cn.svg#AvenirNextLTPro-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_CnIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-CnIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-CnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-CnIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-CnIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-CnIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-CnIt.svg#AvenirNextLTPro-CnIt') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Demi_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Demi.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-Demi.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-Demi.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_DemiCn_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiCn.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCn.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCn.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCn.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCn.svg#AvenirNextLTPro-DemiCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_DemiCnIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiCnIt.svg#AvenirNextLTPro-DemiCnIt') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_DemiIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-DemiIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-DemiIt.svg#AvenirNextLTPro-DemiIt') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_HeavyCn_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCn.svg#AvenirNextLTPro-HeavyCn') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_HeavyCnIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-HeavyCnIt.svg#AvenirNextLTPro-HeavyCnIt') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_It_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-It.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-It.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-It.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-It.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-It.svg#AvenirNextLTPro-It') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_MediumCn_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-MediumCn.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-MediumCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCn.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCn.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCn.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCn.svg#AvenirNextLTPro-MediumCn') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_MediumCnIt_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-MediumCnIt.svg#AvenirNextLTPro-MediumCnIt') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir_Regular_NextLTPro';
+    src: url('../fonts/Avenir/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/Avenir/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('../fonts/Avenir/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../fonts/Avenir/AvenirNextLTPro-Regular.ttf') format('truetype'),
+        url('../fonts/Avenir/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*multiple divs with same properties*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir_Regular_NextLTPro";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -moz-osx-font-smoothing: grayscale;
+    text-overflow: ellipsis;
+    scroll-behavior: smooth;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+.coreproducts .intro
+.aboutus .intro,
+.contactus .intro,
+.contactus .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h6{
+    font-family: "Avenir_Medium";
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: #303436;
+}
+h5{
+    font-family: "Avenir_Black";
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+.aboutus .intro p,
+.contactus .intro p{
+    font-family: "Avenir_Black";
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    letter-spacing: 0.0155rem;
+    color: #1f1f1f;
+
+    margin-top: 0.5rem;
+}
+button{
+    box-shadow: none;
+    outline: none;
+}
+img{
+    font-size: 0.8rem;
+    font-family:"Avenir_BookOblique";
+    font-variant: small-caps;
+}
+:not(output):-moz-ui-invalid {
+    box-shadow: none;
+}
+/*scroll bar, mare---------------------------------------------*/
+.scrollbar { /*firefox*/
+    overflow-y: scroll;
+    scrollbar-color: #b30000 #C2D2E4;
+}
+::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(196, 194, 194); 
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a8a6a6;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+/*---------------------loader----------------------*/
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff0000;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+    -o-animation: loader 2s linear infinite;
+    -ms-animation: loader 2s linear infinite;
+    -khtml-animation: loader 2s linear infinite;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    -ms-animation-delay: .5s;
+    -khtml-animation-delay: .5s;
+    animation-delay: .5s;
+
+}
+@-webkit-keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@-moz-keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/*-------------------------------------------------------------------------------navigation---------------------------------------------------------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 4rem;
+    z-index: 10000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    /*background: rgba(0, 0, 0, 0.3);*/
+}
+header.sticky{
+    background: #fff;
+    padding-top: 2.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    z-index: 10001;
+}
+header .logo{
+    /*content: url(../images/icons/logo_and_dot-ico/logo_twolines_maroon-01.svg);
+    width: 15rem;
+    height: auto;*/
+    transition: all 1s ease;
+}
+header .logo figure svg{
+	height: 4rem;
+	width: auto;
+}
+header.sticky .logo figure svg{
+    display: none;
+}
+header.sticky .logo,
+header.sticky .logo::after{
+    content: url(../images/icons/logo_and_dot-ico/Artboard_1.svg);
+    height: 4rem;
+    width: auto;
+    /*content: attr(data-tooltip);
+    color: #b0191f;
+    letter-spacing: 0.3rem;
+    font-family: "Avenir_Black";
+    font-size: 1rem;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 1s ease;*/
+}
+.NAV_video {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.015;
+}
+header .navigation{
+    display: none;
+}
+header .navigation.active{
+    width: 100%;
+    /*height: calc(100% - 120px);*/
+    height: calc(100%);
+    position: fixed;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+header.sticky .navigation.active{
+    width: 100%;
+    height: calc(100% + 70px);
+    position: fixed;
+    top: 105px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+header .navigation li{
+    margin-left: 0;
+}
+header .navigation li{
+    list-style: none;
+}
+header .navigation li a{
+    /*font-family: "Avenir_bold_NextLTPro";*/
+    font-family: "bebasNeue";
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 1200;
+    overflow: hidden;
+    background: linear-gradient(to right, #aa0909, #aa0909 50%, #000 50%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    -khtml-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -khtml-text-fill-color: transparent;
+    -webkit-background-size: 200% 100%;
+    -moz-background-size: 200% 100%;
+    -o-background-size: 200% 100%;
+    -ms-background-size: 200% 100%;
+    -khtml-background-size: 200% 100%;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-transform: lowercase;
+}
+header .navigation li .website{
+    background: linear-gradient(to right, #ff6c2c, #ff6c2c 50%, #000 50%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    -khtml-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -khtml-text-fill-color: transparent;
+    -webkit-background-size: 200% 100%;
+    -moz-background-size: 200% 100%;
+    -o-background-size: 200% 100%;
+    -ms-background-size: 200% 100%;
+    -khtml-background-size: 200% 100%;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+header .navigation li a:hover{
+    background-position: 0 100%;
+}
+header .navigation li .website:hover{
+    background-position: 0 100%;
+}
+/*----svg logo---*/
+.st0{fill:#AA0909;}
+
+.cls-1{fill:none;}
+.cls-2{fill:#aa0909;}
+.cls-3{clip-path:url(#clip-path);}
+.cls-4{isolation:isolate;}
+.svg-logo{enable-background:new 0 0 700 201.2;}
+.hamburger_icon{
+    position: absolute;
+    right: 4rem;
+
+    width: 60px;
+    height: 45px;
+
+    overflow: unset;
+}
+header.sticky .hamburger_icon{
+    position: absolute;
+    top: 25px;
+    right: 3rem;
+
+    width: 60px;
+}
+.hamburger_icon span{
+    width:100%;
+    height:5px;
+    background-color:#aa0909;
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    transition: all 1s ease;
+}
+    header.sticky .hamburger_icon span{
+        width: 60%;
+        height:5px;
+        background-color:#aa0909;
+        position: absolute;
+        margin-top: 42px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -khtml-border-radius: 2px;
+        border-radius: 2px;
+        transition: all 1s ease;
+    }
+
+.hamburger_icon span:nth-child(1){
+    top:0px;
+}
+.hamburger_icon span:nth-child(2){
+    top:20px;
+}
+.hamburger_icon span:nth-child(3){
+    top:40px;
+}
+    header.sticky .hamburger_icon span:nth-child(2){
+        top:5px;
+    }
+    header.sticky .hamburger_icon span:nth-child(3){
+        top:20px;
+    }
+#nav-menu4[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -khtml-apperance: none;
+    appearance: none;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+#nav-menu4:checked ~ .hamburger_icon > span:nth-child(2){
+    -webkit-animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@-webkit-keyframes span2{
+    40%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,0) scale(1);
+    }
+    50%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,18px) scale(1); 
+    }
+    80%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,-16px) scale(1);
+    }
+    100%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,100px) scale(0);
+    }
+}
+@-moz-keyframes span2{
+    40%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,0) scale(1);
+    }
+    50%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,18px) scale(1); 
+    }
+    80%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,-16px) scale(1);
+    }
+    100%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,100px) scale(0);
+    }
+}
+@keyframes span2{
+    40%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,0) scale(1);
+    }
+    50%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,18px) scale(1); 
+    }
+    80%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,-16px) scale(1);
+    }
+    100%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,100px) scale(0);
+    }
+}
+
+#nav-menu4:checked ~ .hamburger_icon > span:nth-child(3){
+    -webkit-animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+
+    -webkit-animation-delay: .7s;
+    -moz-animation-delay: .7s;
+    -o-animation-delay: .7s;
+    -ms-animation-delay: .7s;
+    -khtml-animation-delay: .7s;
+    animation-delay: .7s;
+}
+@-webkit-keyframes span3{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(80deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+}
+@-moz-keyframes span3{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(80deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+}
+@keyframes span3{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(80deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+}
+#nav-menu4:checked ~ .hamburger_icon > span:nth-child(1){
+    -webkit-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+    -o-animation-delay: 1.1s;
+    -ms-animation-delay: 1.1s;
+    -khtml-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+header.sticky #nav-menu4:checked ~ .hamburger_icon > span:nth-child(1){
+    -webkit-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+    -o-animation-delay: 1.1s;
+    -ms-animation-delay: 1.1s;
+    -khtml-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+    top: -18px;
+}
+@-webkit-keyframes span1{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(-110deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+}
+@-moz-keyframes span1{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(-110deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+}
+@keyframes span1{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(-110deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+}
+    
+.hamburger_icon span:nth-child(1){
+    -webkit-animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@-webkit-keyframes span1_close {
+    0%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+@-moz-keyframes span1_close {
+    0%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+@keyframes span1_close {
+    0%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+    header.sticky .hamburger_icon span:nth-child(1){
+        top: -10px;
+        -webkit-animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+        -moz-animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+        -o-animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+        -ms-animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+        -khtml-animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+        animation: span1_close_sticky .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    }
+    @-webkit-keyframes span1_close_sticky {
+        0%{
+            transform: rotate(-45deg) translate(-20px, 20px);
+        }
+        100%{
+            transform: rotate(0deg) translate(0, 0px);
+        }
+    }
+    @-moz-keyframes span1_close_sticky {
+        0%{
+            transform: rotate(-45deg) translate(-20px, 20px);
+        }
+        100%{
+            transform: rotate(0deg) translate(0, 0px);
+        }
+    }
+    @keyframes span1_close_sticky {
+        0%{
+            transform: rotate(-45deg) translate(-20px, 20px);
+        }
+        100%{
+            transform: rotate(0deg) translate(0, 0px);
+        }
+    }
+.hamburger_icon span:nth-child(2){
+    -webkit-animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@-webkit-keyframes span2_close{
+    0%{
+        transform: translate(0, 40px) scale(0);
+    }
+    100%{
+        transform: translate(0, 0) scale(1);
+    }
+}
+@-moz-keyframes span2_close{
+    0%{
+        transform: translate(0, 40px) scale(0);
+    }
+    100%{
+        transform: translate(0, 0) scale(1);
+    }
+}
+@keyframes span2_close{
+    0%{
+        transform: translate(0, 40px) scale(0);
+    }
+    100%{
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+.hamburger_icon span:nth-child(3){
+    -webkit-animation:span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -moz-animation:span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -o-animation:span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -ms-animation:span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    -khtml-animation:span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+
+}
+@-webkit-keyframes span3_close{
+    0%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+@-moz-keyframes span3_close{
+    0%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+@keyframes span3_close{
+    0%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+.menuToggle{
+    position: relative;
+    cursor: pointer;
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -khtml-apperance: none;
+    appearance: none;
+}
+.menuToggle.active{
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -khtml-apperance: none;
+    appearance: none;
+}
+    /*header.sticky .menuToggle{
+        filter: invert(1);
+    }*/
+
+/********************  window appearance for unsupported screen sizes *******************/
+.not-supported-device, .expand-window{
+    display: none;
+}
+/*--------------------------------------------------------------------------slideshow---------------------------------------------------------------------------------*/
+.main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    /*height: 600px;*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+	
+    overflow: hidden; 
+}
+/*all banners*/
+main .banner .banner-content{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    z-index: 4;
+    overflow: hidden;
+}
+
+main .banner .banner-content-1,
+main .banner .banner-content-2,
+main .banner .banner-content-4{
+    padding: 4rem;
+}
+/*---------------------------------------------------------------------------------------------------------------banner 1*/
+.banner-1{
+    background: url();
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+    .FES_video {
+        position: relative;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.1;
+    }
+    main .banner .banner-content-1{
+        position: absolute;
+    }
+	main .banner .banner-content-1 h3{
+        font-family: "Avenir_bold_NextLTPro";
+        font-size: 8rem;
+        font-weight: 500;
+        color: #1f1f1f;
+
+        margin-top: 0;
+    }
+    main .banner .banner-content-1 p{
+        font-size: 2.9rem;
+        letter-spacing: 0.6rem;
+        font-family: "Avenir_Light";
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #414042;
+
+        margin-top: 1.3rem;
+    }
+	main .banner .banner-content-1 button{
+        position: relative;
+        opacity: 0.8;
+        cursor: pointer;
+        border: none;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -o-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -khtml-border-radius: 5rem;
+        border-radius: 5rem;
+        background-image: linear-gradient(to right, #74080e 0%, #d81f28 99%);
+        padding: 1.5rem 10rem;
+        margin-top: 3rem;
+        z-index: 1;
+
+        color: #fff;
+        text-decoration: none;
+        font-family: "Avenir_boldCN_NextLTPro";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+	}
+    main .banner .banner-content-1 button::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+		cursor: pointer;
+		border: none;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -o-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -khtml-border-radius: 5rem;
+		border-radius: 5rem;
+        background-image: linear-gradient(to right, #790000 0%, rgb(170, 9, 9) 99%);
+		padding: 1.5rem 10rem;
+        z-index: -1;
+        
+        -webkit-transition: opacity 0.5s linear;
+        -moz-transition: opacity 0.5s linear;
+        -ms-transition: opacity 0.5s linear;
+        -o-transition: opacity 0.5s linear;
+        transition: opacity 0.5s linear;
+	}
+    main .banner .banner-content-1 button:hover::before{
+        opacity: 1;
+	}
+/*---------------------------------------------------------------------------------------------------------------banner 2*/
+.banner-2{
+    background: url(../images/slides/banner-60vh/1x/banner-2-cover.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    main .banner .banner-content-2 h3{
+        font-family: "Avenir_bold_NextLTPro";
+        font-size: 8rem;
+        font-weight: 500;
+        color: #aa0909;
+    }
+    main .banner .banner-content-2 p:nth-child(2),
+    main .banner .banner-content-2 p:nth-child(3){
+        font-size: 2.9rem;
+        color: #414042;
+
+        margin-top: 1.5rem;
+    }
+    main .banner .banner-content-2 p:nth-child(3){
+        margin-top: 0;
+    }
+    main .banner .banner-content-2 .btn-2{
+		cursor: pointer;
+		border: 0.2rem solid #aa0909;
+        background-color: none;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -o-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -khtml-border-radius: 5rem;
+		border-radius: 5rem;
+		padding: 1.5rem 10rem;
+		margin-top: 3rem;
+
+		color: #aa0909;
+        text-decoration: none;
+        font-family: "Avenir_boldCN_NextLTPro";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+
+        transition: 0.5s;
+	}
+    main .banner .banner-content-2 .btn-2:hover{
+        background-color: #aa0909;
+        color: #fff;
+    }
+/*-------------------------------------------------------------------------------------------------------------------banner 3*/
+.banner-3{
+    background: url(../images/slides/banner-60vh/1x/banner-3-cover.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    main .banner .banner-content-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        main .banner .banner-content-3 h3{
+            font-family: "Avenir_bold_NextLTPro";
+            font-size: 8rem;
+            font-weight: 500;
+            color: #0049db;
+        }
+        main .banner .banner-content-3 p{
+            font-size: 2.9rem;
+            color: #414042;
+
+            margin-top: 1.5rem;
+        }
+        .dropdown{
+            position: relative;
+            height: auto;
+            width: auto;
+        }
+        main .banner .banner-content-3 .btn-3{
+            position: relative;
+            cursor: pointer;
+
+            border: 0.2rem solid #0049db;
+            background-color: none;
+            -webkit-border-radius: 5rem;
+            -moz-border-radius: 5rem;
+            -o-border-radius: 5rem;
+            -ms-border-radius: 5rem;
+            -khtml-border-radius: 5rem;
+            border-radius: 5rem;
+            padding: 1.5rem 10rem;
+            margin-top: 3rem;
+
+            color: #0049db;
+            text-decoration: none;
+            font-family: "Avenir_boldCN_NextLTPro";
+            text-transform: uppercase;
+            font-size: 2.5rem;
+
+            transition: 0.5s;
+        }
+        .dropdown-show-versions {
+            display: none;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+        .dropdown-show-versions a{
+            color: black;
+            padding: 1em;
+            text-decoration: none;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 0.5rem;
+        }
+        .dropdown-show-versions a img{
+            width: 2rem;
+            height: auto;
+            
+            transition: 500ms linear; 
+        }
+        .dropdown-show-versions a span{
+            color: #0049db;
+            text-decoration: none;
+            font-family:"Avenir_Light";
+            text-transform: lowercase;
+            font-size: 1.3rem;
+        }
+        /*.dropdown-content a:hover {background-color: #ddd;}*/
+        .Three-two-bit:hover img{
+            content: url(../images/icons/UI_icons/versions_32_hover.svg);
+        }
+        .Six-four-bit:hover img{
+            content: url(../images/icons/UI_icons/versions_64_hover.svg);
+        }
+        .dropdown:hover .dropdown-show-versions{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 0.5rem;
+        }
+        main .banner .banner-content-3 .btn-3:hover{
+            background-color: #0049db;
+            color: #fff;
+        }
+        
+/*---------------------------------------------------------------------------------------------------------------banner 4*/
+.banner-4{
+    background: url(../images/slides/banner-60vh/1x/banner-4-cover.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    main .banner .banner-content-4 h3{
+        font-family: "Avenir_bold_NextLTPro";
+        font-size: 8rem;
+        font-weight: 500;
+        color: #aa0909;
+    }
+    main .banner .banner-content-4 p{
+        font-size: 2.9rem;
+        color: #414042;
+
+        margin-top: 1.5rem;
+    }
+    main .banner .banner-content-4 .btn-4{
+		cursor: pointer;
+		border: 0.2rem solid #aa0909;
+        background-color: none;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -o-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -khtml-border-radius: 5rem;
+		border-radius: 5rem;
+		padding: 1.5rem 10rem;
+		margin-top: 3rem;
+        
+		color: #aa0909;
+        text-decoration: none;
+        font-family: "Avenir_boldCN_NextLTPro";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+
+        transition: 0.5s;
+	}
+	main .banner .banner-content-4 .btn-4:hover{
+        background-color: #aa0909;
+        color: #fff;
+	}
+/*-----------------------------------------------------------------------------------------------------------------------------------------indicator**/
+.indicators{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+}
+/* Next & previous buttons */
+.prev-bar,
+.next-bar {
+    cursor: pointer;
+    position: absolute;
+    width: 2.8rem;
+    height: 100vh;
+    transition: 0.6s ease;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -khtml-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.6s ease;
+    z-index: 4;
+} 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: 45vh;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -khtml-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.6s ease;
+    z-index: 4;
+} 
+/* Position the "next button" to the right */
+.next-bar,
+.next  {
+    right: 0;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -khtml-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.prev-bar:hover, .next-bar:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* The dots/bullets/indicators */
+.slideshow-legend {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 92vh 2px;
+    background-color: #bbb;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.1s ease;
+    z-index: 4;
+}
+.slideshow-legend.active, .slideshow-legend:hover{
+    background-color: #717171;
+    height: 17px;
+    width: 17px;
+}
+/*--------------------------------------------------------------------------about us-------------------------------------------------------------------------------------------------------*/
+.aboutus{
+    background-color: #f5fcfc;
+    background-image: url("../images/slides/top_about-us-01_sky.svg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -khtml-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: initial;
+
+    /*padding: 3rem 0 0 0;*/
+    overflow: hidden;
+}
+
+.aboutus .the-company{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-top: 1rem;
+}
+.aboutus .buildings{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+.aboutus .buildings img{
+    margin: 0 auto;
+    display: block;
+
+    width: 100%;
+    opacity: 0.3;
+}
+.aboutus .gap img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    opacity: 0.22;
+}
+.aboutus .the-company .mission,
+.aboutus .the-company .vision{
+    position: relative;
+    background-color: #fff;
+    width: 25rem;
+    height: 16rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .aboutus .the-company .mission .img-container,
+    .aboutus .the-company .vision .img-container{
+        position: relative;
+        width: 6rem;
+        height: 5rem;
+
+        margin-top: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .aboutus .the-company .mission .img-container img,
+        .aboutus .the-company .vision .img-container img{
+            width: 6rem;
+        }
+        .aboutus .the-company .mission:hover,
+        .aboutus .the-company .vision:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+        }
+        .aboutus .the-company .mission:hover img,
+        .aboutus .the-company .vision:hover img{
+            transition: all 0.8s;
+            transform: rotateY(360deg);
+        }
+    .aboutus .the-company .mission .texts,
+    .aboutus .the-company .vision .texts{
+        width: 24rem;
+        height: 11rem;
+
+        padding: 0 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        /*---insert h5 **given */
+        /***---*/
+        .aboutus .the-company .mission .texts p,
+        .aboutus .the-company .vision .texts p{
+            font-family: "Avenir_Light";
+            font-size: 0.85rem;
+            color: #545252;
+            line-height: 1.5em;
+            text-align: center;
+        }
+/*-------------------------------------------------------------------------------------show the team members*/
+.aboutus .show-team{
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+}
+    .showHide{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        cursor: pointer;
+
+        margin-top: 1rem;
+        height: 5rem;
+        width: 5rem;
+        z-index: 10000;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #animated-arrow{
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-bottom: 3px solid #ff0517;
+        border-right: 3px solid #ff0517;
+        transform: rotate(45deg);
+        margin: -12px;
+    }
+    .remove-animation{
+        -webkit-animation:scroll 1s infinite;
+        -moz-animation:scroll 1s infinite;
+        -ms-animation:scroll 1s infinite; 
+        -o-animation:scroll 1s infinite; 
+        animation: scroll 1s infinite;
+    }
+    .remove-animation:nth-child(2){
+        -webkit-animation-delay: -.1s;
+        -moz-animation-delay: -.1s;
+        -o-animation-delay: -.1s;
+        -ms-animation-delay: -.1s;
+        -khtml-animation-delay: -.1s;
+        animation-delay: -.1s;
+    }
+    .remove-animation:nth-child(3){
+        -webkit-animation-delay: -.4s;
+        -moz-animation-delay: -.4s;
+        -o-animation-delay: -.4s;
+        -ms-animation-delay: -.4s;
+        -khtml-animation-delay: -.4s;
+        animation-delay: -.4s;
+    }
+
+    @keyframes scroll{
+        0%{
+            opacity: 0;
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    }
+
+    @-moz-keyframes scroll{
+        0%{
+            opacity: 0;
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    }
+
+    @-webkit-keyframes scroll{
+        0%{
+            opacity: 0;
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    }
+
+    
+    .showHide + input {
+        display: none;
+    }
+    .showHide + input + .the-team{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s both;
+        margin-top: 5rem;
+    }
+    .showHide + input:checked + .the-team {
+        max-height: 300em;
+        overflow: hidden;
+        transition: max-height 0.5s both;
+        margin-top: .5rem;
+    }
+/*-------------------------------------------reverse animation--*/
+.Hideshow{
+    -webkit-animation:scrollup 1s infinite;
+    -moz-animation:scrollup 1s infinite;
+    -ms-animation:scrollup 1s infinite; 
+    -o-animation:scrollup 1s infinite; 
+    animation: scrollup 1s infinite;
+}
+@keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+
+@-moz-keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+
+@-webkit-keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+/*-------------------------------------------The Directors*/
+.aboutus .the-team{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .the-team .column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+    /*.aboutus .the-team .column:not(:first-child){
+        margin-top: 0.8rem;
+    }*/
+    .aboutus .the-team .column .team-member{
+        width: 25rem;
+        height: 17rem;
+        padding: 6rem 1.2rem 0 1.2rem;
+    }
+        .aboutus .the-team .column .right-bottom{
+            border-right: none;
+            border-bottom: 1px solid #f0fafa;
+        }
+        .aboutus .the-team .column .left-bottom{
+            /*border-left: 1px solid rgb(26, 25, 25);*/
+            border-bottom: 1px solid #f0fafa;
+        }
+        .aboutus .the-team .column .right-top
+        /*,.aboutus .the-team .column .left-top*/{
+            border-right: 1px solid  #f0fafa;
+        }
+            .aboutus .the-team .column .team-member h4,
+            .aboutus .the-team .column .team-member h3{
+                font-family:"Avenir_Black";
+                font-size: 1.5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: #1f1f1f;
+                text-align: left;
+            }
+            .aboutus .the-team .column .team-member h3{
+                font-size: 0.95rem;
+            }
+            .aboutus .the-team .column .team-member ul{
+                margin: 0.3rem 0 0 1rem;
+            }
+            .aboutus .the-team .column .team-member ul li,
+            .aboutus .the-team .column .team-member p{
+                font-family: "Avenir_Light";
+                color: rgb(84, 82, 82);
+                font-size: 0.8rem;
+                font-weight: 100;
+                line-height: 1.3rem;
+                text-align: left;
+            }
+            .aboutus .the-team .column .team-member p{
+                line-height: 1.155rem;
+                margin-top: 0.3rem;
+                /*text-indent: 2rem;*/
+            }
+/*--------------------------------------------------------------------------------------------------------------hide the team div*/
+/*.aboutus .arrows-up{
+    position: absolute;
+    top: 275%;
+    left: 50%;
+    transform: translate(-50%, -275%);
+    z-index: 100000;
+}
+.aboutus .arrows-up span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #ff0517;
+    border-left: 3px solid #ff0517;
+    transform: rotate(45deg);
+    margin: -15px 0rem;
+    -webkit-animation:scrollup 2s infinite;
+    -moz-animation:scrollup 2s infinite;
+    -ms-animation:scrollup 2s infinite; 
+    -o-animation:scrollup 2s infinite; 
+    animation: scrollup 2s infinite;
+}
+.arrows-up span:nth-child(2){
+    -webkit-animation-delay: -.2s;
+    -moz-animation-delay: -.2s;
+    -o-animation-delay: -.2s;
+    -ms-animation-delay: -.2s;
+    -khtml-animation-delay: -.2s;
+    animation-delay: -.2s;
+}
+.arrows-up span:nth-child(3){
+    -webkit-animation-delay: -.4s;
+    -moz-animation-delay: -.4s;
+    -o-animation-delay: -.4s;
+    -ms-animation-delay: -.4s;
+    -khtml-animation-delay: -.4s;
+    animation-delay: -.4s;
+}
+
+@keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+
+@-moz-keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+
+@-webkit-keyframes scrollup{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+*/
+/*-------------------------------------------------------------------------------------------------contact us-----------------------------------------------------------------------*/
+.contactus{
+    /*border-top: 1px solid rgb(214, 214, 214);*/
+    background-color: #f1f3f4;
+    background-image: linear-gradient(#f1f3f4, #fff);
+    padding: 3rem 0 2.5rem 0;
+    overflow: hidden;
+}
+    .contactus .buildings{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 99.99%;
+
+        z-index: 4;
+    }
+    .contactus .buildings img{
+        margin: 0 auto;
+        display: block;
+
+        opacity: 0.2;
+        width: 100%;
+    }
+.contactus .contact-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+.contactus .contact-details .email-addresses,
+.contactus .contact-details .contact-numbers{
+    width: 14.5rem;
+    height: 4rem;
+
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+    .contactus .contact-details .email-addresses .icon,
+    .contactus .contact-details .contact-numbers .icon{
+        position: relative;
+        width: 4rem;
+        height: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .contactus .contact-details .email-addresses .icon img,
+        .contactus .contact-details .contact-numbers .icon img{
+            object-fit: cover;
+            width: 3rem;
+        }
+    .contactus .contact-details .email-addresses .texts,
+    .contactus .contact-details .contact-numbers .texts{
+        width: 25rem;
+        height: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+        
+        .contactus .contact-details .email-addresses .texts h1,
+        .contactus .contact-details .contact-numbers .texts h1{
+            font-family: "Avenir_Black";
+            font-size: 0.92rem;
+            font-weight: 800;
+            text-transform: capitalize;
+
+            color: #1f1f1f;
+        }
+        .contactus .contact-details .email-addresses .texts ul li,
+        .contactus .contact-details .contact-numbers .texts ul li{
+            font-family: "Avenir_Light";
+            color: #545252;
+            font-size: 0.8rem;
+            font-weight: 100;
+            line-height: 1rem;
+            list-style: none;
+        }
+.contactus .office-location{
+    height: 15rem;
+
+    margin-top: 1rem;
+}
+
+/*------------------------------------------------------------------------------get in touch*/
+.contactus .get-in-touch h6{
+    margin-top: 2.5rem;
+}
+
+/*-------------------radio button for selecting between inquire form or techinical assitance-------------------------------------*/
+.choices{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 5px 0;
+}
+.choices label {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375rem;
+} 
+.choices label input {
+    position: absolute;
+    left: -9999px;
+}
+.choices label input:checked + span:before {
+    box-shadow: inset 0 0 0 0.5em #1f1f1f;
+}
+.choices label span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.3rem;
+    height: 1.3rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 0.3753rem;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.1253rem #1f1f1f;
+}
+.choices span {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.375rem 0.375rem 0;
+    transition: 0.25s ease;
+    
+    font-family: Avenir_Black;
+    font-weight: 800;
+    font-size: 0.8rem;
+
+    color: #1f1f1f;
+}
+.choices span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.3rem;
+    height: 1.3rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 0.375rem;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125rem #000;
+}
+
+/*--------------------------------------the forms*/
+form{
+    width: 50rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form-group { 
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.form-group:not(:first-child){
+    margin-top: 5px;
+}
+.form-group .field label{
+    font-family: Avenir_Black;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: #1f1f1f;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.field input, .field select, .field textarea, .field select option{
+    background-color: #f9fafa;
+    border: 2px solid #e7e7eb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+    margin-top: 1px;
+    padding: 0.5rem;
+
+    width: 125%;
+    height: 38px;
+
+    font-size: 12px;
+    font-family: Avenir_Regular_NextLTPro;
+    font-weight: 500;
+}
+.field select{
+    width: 110.5%;
+}
+.field textarea{
+    width: 110.5%;
+    padding: 10px;
+    resize: vertical;
+    max-height: 80px;
+    min-height: 120px
+}
+.field-3, .field-4{
+    margin-top: 1px;
+}
+.field-5, .field-6{
+    margin-top: 1px;
+    width: 100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus{
+    box-shadow: 0 0 3px #2834da;
+    outline: none;
+    padding: 0.5rem;
+}
+.contact-form-buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+button[type="submit"], button[type="reset"]{
+    width: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #fefefe;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 8px;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    
+    font-family: Avenir_Medium;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #000;
+    text-align: center;
+}
+button[type="submit"]:hover {
+    background-color: #2a3189;
+    font-family:"Avenir_Black";
+    color: #f9fafa;
+}
+#clearme:disabled, #clearMe_TA:disabled{
+    background:  #fff;
+    color: #ccc;
+    cursor:not-allowed !important;
+}
+#clearme:disabled:hover,  #clearMe_TA:disabled:hover{
+    font-family: Avenir_Medium;
+}
+._disabled:disabled{
+    background-color: #e6e9e9;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -khtml-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    -o-appearance: textfield;
+    -ms-appearance: textfield;
+    -khtml-appearance: textfield;
+    appearance: textfield;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+.apply-shake{
+    -webkit-animation:shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    -moz-animation:shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    -ms-animation:shake 1s cubic-bezier(.36,.07,.19,.97) both; 
+    -o-animation:shake 1s cubic-bezier(.36,.07,.19,.97) both; 
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -khtml-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -khtml-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+@keyframes slight-shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(3px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+@-moz-keyframes slight-shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(3px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+@-webkit-keyframes slight-shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(3px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+.slight-shake{
+    -webkit-animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    -moz-animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    -o-animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    -ms-animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    -khtml-animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    animation: slight-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -khtml-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -khtml-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#error-company_inquire, 
+#error-email_inquire,
+#error-company_tBShoot, 
+#error-email_tBShoot{
+    font-family:"Avenir_Book";
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #aa0909;
+    transition-delay: 3s;
+}
+::-webkit-input-placeholder { /* Edge */
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 0.5;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+.disable-selected{
+    visibility: hidden;
+}
+/*---------------------------------------------------------------------------------core products----------------------------------------------------------------------------------------*/
+#coreProducts{
+    position: relative;
+    background-color: #f5fcfc;
+
+    overflow: hidden;
+}
+.nav-gap{
+    background-color: #f5fcfc;
+    height: 10rem;
+}
+.coreProduct {
+    position: relative;
+    display: none;
+    border: 0.1em solid rgba(51, 50, 50, 0.09);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -khtml-border-radius: 1rem;
+    border-radius: 1rem;
+    padding: 4rem 2rem 3rem 2rem;
+    width: auto;
+    height: 380px;
+
+    margin-top: 1.5rem;
+}
+.img-box{
+    position: relative ;
+    width: 45%;
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.definition{
+    position: relative;
+    width: 55%;
+    height: auto;
+    float: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.definition h5{
+    font-family: "Avenir_Black";
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0155rem;
+    color: #031162;
+    margin: -1rem 0 0 1.3rem;
+}
+.definition ul{margin-left: 2.5rem;}
+.definition ul li,
+.def-edocs ul li{ 
+    font-family:"Avenir_Light";
+    font-size: 0.85rem;
+    color: #545252;
+    line-height: 1.5em;
+    text-align: left;
+}
+.def-edocs ul li{ 
+    line-height: 1.8em;
+}
+#modal-button{
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 1.3rem;
+
+    font-size: clamp(1em, 1vw, 2em);
+    color: rgb(3 17 98);
+    font-family: "Avenir_Black";
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    box-shadow: none;
+    outline: none;
+    
+    cursor: pointer;
+    border: none;
+
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -khtml-border-radius: 5rem;
+    border-radius: 5rem;
+    background-image: linear-gradient(to right, rgb(250, 219, 117) 0%, #ffcb30 99%);
+    
+    width: 10rem;
+    z-index: 1;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.coreProducts-container {
+    width: 60rem;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prevCoreProduct, .nextCoreProduct {
+    cursor: pointer;
+    position: absolute;
+    top: 42%;
+    height: 1.5rem;
+    width: 1.5rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 0.6s ease;
+    
+    -webkit-filter: invert(60%);
+    -moz-filter: invert(60%);
+    -o-filter: invert(60%);
+    -ms-filter: invert(60%);
+    -khtml-filter: invert(60%);
+    filter: invert(60%);
+}
+
+/* Position the "next button" to the right */
+.prevCoreProduct {
+    left: -2rem;
+}
+.nextCoreProduct {
+    right: -2rem;
+}
+.prevCoreProduct:hover, 
+.nextCoreProduct:hover {
+    -webkit-filter: invert(0%);
+    -moz-filter: invert(0%);
+    -o-filter: invert(0%);
+    -ms-filter: invert(0%);
+    -khtml-filter: invert(0%);
+    filter: invert(0%);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.effect {
+    -webkit-animation-name: effect;
+    -moz--animation-name: effect;
+    -o--animation-name: effect;
+    -ms--animation-name: effect;
+    -khtml-animation-name: effect;
+    animation-name: effect;
+    
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -khtml-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes effect {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@-moz-keyframes effect {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes effect {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 10001;
+    padding-top: 150px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -khtml-border-radius: 1.5rem;
+    border-radius: 1.5rem;
+    margin: auto;
+    padding: 1.5rem;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+    -webkit-animation-name: animatetop;
+    -moz-animation-name: animatetop;
+    -o-animation-name: animatetop;
+    -ms-animation-name: animatetop;
+    -khtml-animation-name: animatetop;
+    animation-name: animatetop;
+
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    -ms-animation-duration: 0.4s;
+    -khtml-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@-moz-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.monthly-top{
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    padding: 1.3rem;
+}
+
+.close {
+    float: right;
+    content: url("../images/icons/UI_icons/close_.svg");
+    width: 4rem;
+    height: auto;
+
+    margin-top: 0.3rem;
+}
+.modal-icon{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.modal-icon-core-product{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+
+    top: 3.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.modal-icon img{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.modal-header {
+    border-bottom: 2px solid #272727;
+    color: #031162;
+    height: 3.5rem;
+}
+.modal-header h2{
+    font-family: "Avenir_Black";
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0155rem;
+    color: #031162;
+
+    margin-top: 0.5rem;
+}
+
+.modal-body {
+    padding: 2rem 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body h2{
+    font-family: "Avenir_Black";
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.0155rem;
+    color: #031162;
+    text-align: center;
+
+    margin-top: 0.5rem;
+}
+
+.modal-body ul li{ 
+    font-family: "Avenir_Light";
+    font-size: 0.85rem;
+    color: #545252;
+    line-height: 1.5em;
+    text-align: left;
+}
+.nested-unordered-list{
+    margin-left: 1rem;
+}
+/*.old-products-features-indention{
+    margin-left: -16rem;
+}*/
+/*-------inquire new products---------*/
+/*------video------*/
+.CICS_video {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0.5em;
+    border-radius: 1.5rem;
+}
+/*----modal-----*/
+.new-product-modal {
+    display: none;
+    position: fixed; 
+    z-index: 10001;
+    /*padding-top: 150px; */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.new-product-modal-content{
+    position: relative;
+    width: 40%;
+    height: auto;
+
+    padding: 2rem 2rem 1rem 2rem;
+    overflow: hidden;
+}
+.new-product-modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    
+    z-index: 10002;
+
+    content: url("../images/icons/UI_icons/close_.svg");
+    width: 4rem;
+    height: auto;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-6,
+.form-7{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 1rem;
+}
+.form-6 input,
+.form-7 input{
+    background-color: #f9fafa;
+    border: 2px solid #e7e7eb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 1px;
+    padding: 0.5rem;
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+    font-family: Avenir_Regular_NextLTPro;
+    font-weight: 500;
+}
+.form-6 label,
+.form-7 label {
+    font-family: Avenir_Black;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+.form-6 label:not(:first-child),
+.form-7 label:not(:first-child){
+    margin-top: 0.3rem;
+}
+.buttons-new-products{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    margin-top: 0.5rem;
+}
+#error-email_CICS,
+#error-company_CICS,
+#error-company_OTVS,
+#error-email_OTVS{
+    font-family:"Avenir_Book";
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #aa0909;
+    transition-delay: 3s;
+}
+
+#error-email_CICS,
+#error-email_OTVS{
+    margin-top: 0.3rem;
+}
+/*-----------------------------------------------------------------------------------------------our products------------------------------------------------------*/
+.ourproducts{
+    position: relative;
+    background-color: #f5fcfc;
+    padding: 3rem 0 1.5rem 0;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.ourproducts h6{color: #303436;}
+/*---------------------------other products----------------------------------------------*/
+
+.products{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5.6rem;
+}
+.gray-code{margin-top: -2rem;}
+.products .product{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 17rem;
+    height: 18rem;
+    padding: 0 0.3rem;
+    overflow: hidden;
+
+    background-color: #f4f4f4;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -khtml-border-radius: 1.5rem;
+    border-radius: 1.5rem;
+    transition: 0.5s ease;
+}
+.products .product .img-holder{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    justify-self: flex-start;
+}
+    .product .img-holder img{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .product h3{
+        font-family:"Avenir_Black";
+        color: #353434;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .product p{
+        font-family:"Avenir_Light";
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        color: #515151;
+        text-align: center;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .clamp-2 p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .product #modal-id-button,
+    .product #inquire-button{
+        margin-top: 0.8rem;
+        padding: 0.5rem 2rem;
+
+        justify-self: flex-end;
+        
+        background-color: white;
+        border-radius: 1rem;
+        border-style: none;
+        transition: 0.5s ease;
+
+        color: #333131;
+    }
+/*--------new product label-------------------*/
+.new-product-type{
+    position: absolute;
+    top: 0.8rem;
+    left: 14rem;
+    height: 45px;
+    width: 60px;
+
+    opacity: 0;
+}
+/*hovered divs our products-------------------------------------------------------------------*/
+.ourproducts .products .product:hover{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05),0 6px 20px 0 rgba(0,0,0,0.05);
+}
+.ourproducts .gray-code .product:hover  #modal-id-button{
+    border: 0.01rem solid #bdbbbb;
+    color: #333131;
+}
+.ourproducts .core-products .product:hover  #modal-id-button{
+    border: 0.01rem solid #b01f23;
+    color: #333131;
+}
+.ourproducts .new-products .product:hover  #inquire-button{
+    border: 0.01rem solid #dcd112;
+    color: #333131;
+}
+.ourproducts .new-products .product:hover .new-product-type{
+    opacity: 1;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    background-color: #fff;
+    padding: 1rem;
+    background-color: #320e0e;
+    gap: 1rem 21rem;
+}
+
+footer .dasc-footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    
+    border-bottom: 0.1rem solid #4b4a4a;
+    padding-bottom: 0.5rem;
+}
+footer .dasc-footer-details .dasc-links,
+footer .dasc-footer-details .product-links,
+footer .dasc-footer-details .company-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 20rem;
+    padding: 5rem 1rem;
+}
+footer .dasc-footer-details .dasc-links{
+    width: 50%;
+}
+
+.footer-links {
+    width: calc(50%/4);
+}
+footer .dasc-links h6{
+    font-family: "bebasNeue";
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.0155rem;
+    color: rgb(255, 255, 255);
+}
+footer .dasc-links h6::before{
+    position: relative;
+    content: "";
+    background-image: url(../images/icons/logo_and_dot-ico/logo_white.png);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+footer .dasc-links p{
+    font-family: Avenir_Light;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+    margin-top: 0.3rem;
+}
+footer .social-media-accounts{
+    margin-top: 0.8rem;
+}
+
+footer .social-media-accounts ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+footer .social-media-accounts ul li a:link,
+footer .social-media-accounts ul li a:visited,
+footer .social-media-accounts ul li a:hover,
+footer .social-media-accounts ul li a:active{
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+}
+footer .footer-links h1{
+    font-family: Avenir_Black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.0155rem;
+    color: #fff;
+}
+footer .footer-links ul{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 0.5rem; 
+}
+footer .footer-links ul li{
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+footer .footer-links ul li a:link,
+footer .footer-links ul li a:visited,
+footer .footer-links ul li a:hover,
+footer .footer-links ul li a:active{
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+}
+
+/*---------links modal*/
+.footer-modal{
+    background-color: #fff;
+    background-image: url("../images/backgrounds/mesh_4-02.png");
+    background-size: cover;
+
+    padding-top: 100px; 
+}
+.footer-modal h6{
+    margin-bottom: 25px; 
+}
+.footer-modal-content{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem;
+    box-shadow: none;
+}
+.footer-modal-content .price{
+    background-color: #fcfdfd;
+    border-radius: 2rem;
+    width: calc(95%/2);
+    height: 45rem;
+}
+/*-----------------------*/
+footer .copyright{
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    color: #e6e9e9;
+    font-family: "Avenir_It_NextLTPro";
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer .logo span{
+    font-size: 0.7rem;
+    color: #e6e9e9;
+}
+footer .logo span::before{
+    content: "";
+    background-image: url(../images/icons/logo_and_dot-ico/logo_white.png);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: inline-block;
+    
+    height: 1.5rem;
+    width: 1.5rem;
+
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+:target {
+    -webkit-animation: target-fade 4s;
+    -moz-animation: target-fade 4s;
+    -o-animation: target-fade 4s;
+    animation: target-fade 4s;
+}
+@-webkit-keyframes target-fade {
+    from {
+        opacity: 0.5;
+        background-color: #fff4f4;
+   }
+    to {
+        opacity: 1;
+        background-color: transparent;
+   }
+}
+@-moz-keyframes target-fade {
+    from {
+        opacity: 0.5;
+        background-color: #fff4f4;
+   }
+    to {
+        opacity: 1;
+        background-color: transparent;
+   }
+}
+@-o-keyframes target-fade {
+    from {
+        opacity: 0.5;
+        background-color: #fff4f4;
+   }
+    to {
+        opacity: 1;
+        background-color: transparent;
+   }
+}
+@keyframes target-fade {
+    from {
+        opacity: 0.5;
+        background-color: #fff4f4;
+   }
+    to {
+        opacity: 1;
+        background-color: transparent;
+   }
+}
+
+@media only screen and (max-width: 1787px){
+    /*------------------------------------------------------------banners--------------*/
+    main .banner .banner-content-1 h3,
+    main .banner .banner-content-2 h3,
+    main .banner .banner-content-3 h3,
+    main .banner .banner-content-4 h3{
+        font-size: 5rem;
+    }
+    main .banner .banner-content-1 p,
+
+    main .banner .banner-content-2 p:nth-child(2),
+    main .banner .banner-content-2 p:nth-child(3),
+
+    main .banner .banner-content-3 p,
+
+    main .banner .banner-content-4 p
+    {
+        font-size: 2rem;
+    }
+    main .banner .banner-content-3 p{
+        text-align: center;
+    }
+	main .banner .banner-content-1 button,
+    main .banner .banner-content-2 .btn-2,
+    main .banner .banner-content-3 .btn-3,
+    main .banner .banner-content-4 .btn-4{
+        padding: 1rem 8rem;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+	}
+    /*------------------------------------------------------------banner-2--------------*/
+    main .banner .banner-content-2 p:nth-child(3){
+        margin-top: 0;
+    }
+    /*.dropdown-content {
+        min-width: 8.7em;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 1em 8.7em;
+    }*/
+}
+@media only screen and (max-width: 1024px){
+    .coreProducts-container {
+        width: 80%;
+    }
+    .definition h5,
+    .modal-header h2,
+    .modal-body h2 {
+        font-size: clamp(1.7em, 5vw, 0.1em);
+    }
+    .definition ul li,
+    .aboutus .the-company .mission .texts p,
+    .aboutus .the-company .vision .texts p,
+    .modal-body ul li  {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    .img-box img {
+        position: absolute;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+
+        top: 3rem;
+    }
+    #modal-button {
+        padding: 0.5rem;
+    }
+        .btn-eDocs-modal{
+            margin-top: 1.5rem;
+        }
+    .products{
+        gap: 2rem;
+    }
+    .products .product {
+        gap: 0.5rem;
+        width: 16rem;
+        height: 18rem;
+        padding: 0 0.3rem;
+    }
+    .yellow-code{
+        margin-top: -2rem;
+    }
+    footer .dasc-footer-details .product-links,
+    footer .dasc-footer-details .company-links{
+        width: calc(50%/3);
+    }
+    footer .dasc-links h6{
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    footer .dasc-links h6::before{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    footer .dasc-links p{
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+
+        margin-top: 0.1rem;
+    }
+    svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    footer .copyright{
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 830px){ /*tablet size*/
+    /*-----------header----------------------------------------------------------------*/
+    header .logo{
+        content: url(../images/icons/logo_and_dot-ico/logo_embossed.svg);
+        /*content: url(../images/icons/logo_and_dot-ico/visible.svg);*/
+        width: 4rem;
+        height: auto;
+    }
+    header.sticky .logo,
+    header.sticky .logo::after{
+        content: url(../images/icons/logo_and_dot-ico/logo_embossed.svg);
+        /*content: attr(data-tooltip);*/
+        color: #b0191f;
+        letter-spacing: 0.3rem;
+        font-family: "Avenir_Black";
+        font-size: 1rem;
+        opacity: 1;
+        text-decoration: none;
+        transition: all 1s ease;
+    }
+    header .navigation.active{
+        height: calc(100% - 130px);
+        position: fixed;
+        top: 130px;
+    }
+    /*------------------------------------------------------------ for tablet banners--------------*/
+    main .banner .banner-content-1 h3,
+    main .banner .banner-content-2 h3,
+    main .banner .banner-content-3 h3,
+    main .banner .banner-content-4 h3{
+        font-size: 3rem;
+    }
+    main .banner .banner-content-1 p,
+
+    main .banner .banner-content-2 p:nth-child(2),
+    main .banner .banner-content-2 p:nth-child(3),
+
+    main .banner .banner-content-3 p,
+
+    main .banner .banner-content-4 p
+    {
+        font-size: 1.3rem;
+    }
+	main .banner .banner-content-1 button,
+    main .banner .banner-content-2 .btn-2,
+    main .banner .banner-content-3 .btn-3,
+    main .banner .banner-content-4 .btn-4{
+        padding: 0.8rem 3.5rem;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+	}
+    /*------------------------------------------------------------ for tablet banner-1--------------*/
+    main .banner .banner-content-1 button::before{
+        position: absolute;
+        content: "";
+        opacity: 0;
+		border-radius: 5rem;
+		background-image: linear-gradient(to right, #ffb8d0 0%, #aa0017 99%);
+		padding: 0.8rem 3.5rem;
+	}
+    main .banner .banner-content-1 button:hover::before{
+        opacity: 1;
+	}
+    /*------------------------------------------------------------ for tablet banner-2--------------*/
+    main .banner .banner-content-2 p:nth-child(3){
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 822px){
+    .aboutus .the-team .column .right-bottom{
+        border-right: none;
+        border-bottom: none;
+    }
+    .aboutus .the-team .column .left-bottom{
+        /*border-left: 1px solid rgb(26, 25, 25);*/
+        border-bottom: none;
+    }
+    .aboutus .the-team .column .right-top
+    /*,.aboutus .the-team .column .left-top*/{
+        border-right: none;
+    }
+}
+@media only screen and (max-width: 770px){
+    .definition h5, .modal-header h2, .modal-body h2 {
+        font-size: 1.3rem;
+    }
+    .definition ul li, .aboutus .the-company .mission .texts p, .aboutus .the-company .vision .texts p, .modal-body ul li {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    #modal-button {
+        padding: 0.3rem 0.09rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    header .logo{
+        content: url(../images/icons/logo_and_dot-ico/visible.svg);
+        width: 4rem;
+        height: auto;
+    }
+    header.sticky .logo,
+    header.sticky .logo::after{
+        content: url(../images/icons/logo_and_dot-ico/logo_embossed.svg);
+        /*content: url(../images/icons/logo_and_dot-ico/visible.svg);*/
+        width: 3rem;
+        height: auto;
+    }
+    header .navigation.active{
+        height: calc(100% - 130px);
+        position: fixed;
+        top: 130px;
+    }
+    header{
+        padding: auto 1rem;
+    }/*------------------------------------------------------------ for tablet banners--------------*/
+    main .banner .banner-content-1 h3,
+    main .banner .banner-content-2 h3,
+    main .banner .banner-content-3 h3,
+    main .banner .banner-content-4 h3{
+        font-size: 3rem;
+    }
+    main .banner .banner-content-1 p,
+
+    main .banner .banner-content-2 p:nth-child(2),
+    main .banner .banner-content-2 p:nth-child(3),
+
+    main .banner .banner-content-3 p,
+
+    main .banner .banner-content-4 p
+    {
+        font-size: 1.3rem;
+    }
+    main .banner .banner-content-3 p{
+        text-align: center;
+    }
+	main .banner .banner-content-1 button,
+    main .banner .banner-content-2 .btn-2,
+    main .banner .banner-content-3 .btn-3,
+    main .banner .banner-content-4 .btn-4{
+        padding: 0.8rem 3.5rem;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+	}
+    /*------------------------------------------------------------ for tablet banner-1--------------*/
+    main .banner .banner-content-1 button::before{
+        position: absolute;
+        content: "";
+        opacity: 0;
+		border-radius: 5rem;
+		background-image: linear-gradient(to right, #ffb8d0 0%, #aa0017 99%);
+		padding: 0.8rem 3.5rem;
+	}
+    main .banner .banner-content-1 button:hover::before{
+        opacity: 1;
+	}
+    /*------------------------------------------------------------ for tablet banner-2--------------*/
+    main .banner .banner-content-2 p:nth-child(3){
+        margin-top: 0;
+    }
+    .definition h5 {
+        font-size: 1.3rem;
+    }
+    .definition ul li,
+    .aboutus .the-company .mission .texts p,
+    .aboutus .the-company .vision .texts p {
+        font-size: 0.8rem;
+    }
+    .coreProduct {
+        width: auto;
+        height: 30rem;
+
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+    }
+    .img-box{
+        width: 35%;
+        height: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .img-box img {
+        top: 3rem;
+    }
+    .definition{
+        width: 80%;
+        height: auto;
+        float: none;
+
+        display: block;
+        margin: -18rem auto;
+    }
+    .definition h5 {
+        margin: 0;
+        text-align: center;
+    }
+    .definition ul {
+        margin-left: 1.5rem;
+    }
+    
+    #modal-button{
+        padding: 0.3rem;
+
+        display: block;
+        margin: 0.8rem auto;
+        
+        font-size: 0.85rem;
+        background-color: #ea5b34;
+        
+        width: 9rem;
+        z-index: 1;
+    }
+    .products .product {
+        gap: 0.5rem;
+        width: 12.5rem;
+        height: 15rem;
+        padding: 0px 0.3rem;
+    }
+    .product h3 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .product p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .definition h5, 
+    .modal-header h2,
+    .modal-body h2 {
+        font-size: 1.3rem;
+    }
+    .new-product-modal-content {
+        position: relative;
+        width: 80%;
+        height: auto;
+        padding: 2rem 2rem 1rem;
+        overflow: hidden;
+    }
+    footer .dasc-footer-details .product-links,
+    footer .dasc-footer-details .company-links{
+        width: calc(50%/2.5);
+    }
+    footer .dasc-links h6{
+        font-size: 1.7rem;
+    }
+    footer .dasc-links h6::before{
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+    footer .dasc-links p{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-top: 0.3rem;
+    }
+    svg{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    footer .footer-links h1 {
+        font-size: 1.2rem;
+    }
+    footer .footer-links ul li {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    footer .copyright{
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 799px){
+    .aboutus .the-team .column .right-bottom{
+        border-right: none;
+        border-bottom: 1px solid rgb(240, 250, 250);
+    }
+    .aboutus .the-team .column .left-bottom{
+        /*border-left: 1px solid rgb(26, 25, 25);*/
+        border-bottom: 1px solid rgb(240, 250, 250);
+    }
+    .aboutus .the-team .column .right-top
+    /*,.aboutus .the-team .column .left-top*/{
+        border-bottom: 1px solid rgb(240, 250, 250);
+    }
+}
+
+@media only screen and (min-width: 775px) and (max-width: 815px){
+    form{
+        width: 45rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .form-group { 
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .ourproducts{
+        padding: 0 5rem 3rem 5rem;
+    }
+    footer .dasc-footer-details .dasc-links, 
+    footer .dasc-footer-details .product-links, 
+    footer .dasc-footer-details .company-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        padding: 0 1rem;
+    }
+    
+    footer .dasc-footer-details .dasc-links, 
+    footer .dasc-footer-details .product-links {
+        border-bottom: 0.1rem solid rgb(75, 74, 74);
+        padding-bottom: 0.5rem;
+    }
+    footer .dasc-footer-details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    footer .dasc-footer-details .dasc-links,
+    footer .dasc-footer-details .product-links, 
+    footer .dasc-footer-details .company-links {
+        width: 100%;
+    }
+}
+@media only screen and  (max-width: 650px){
+    header {
+        padding: 2rem 3rem;
+    }
+    .products {
+        gap: 1rem;
+    }
+    .products {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 525px){
+    .definition {
+        width: 90%;
+        height: auto;
+        float: none;
+        display: block;
+        margin: -20rem auto;
+    }
+}
+@media only screen and (max-width: 590px){
+    .footer-modal-content{
+        flex-direction: column;
+    }
+    .footer-modal-content .price{
+        width: 100%;
+        height: 20rem;
+    }
+    .price-yearly{
+        margin-top: 2rem;
+    }
+}
+@media only screen and (min-width: 591px) and (max-width: 774px){
+    form{
+        width: 35rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .form-group { 
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 65px;
+    }
+}
+
+@media only screen and (max-height: 635px){
+    header{
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 460px){
+    .aboutus .the-company .mission,
+    .aboutus .the-company .vision {
+        width: 100%;
+        height: 16rem;
+        padding: 0.5rem;
+    }
+    form{
+        width: 25rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .form-group { 
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 65px;
+    }
+    .aboutus,
+    .contactus,
+    .coreProducts,
+    .ourproducts {
+        padding: 1rem;
+    }
+    .products {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .products .product {
+        gap: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        padding: 0 0.8rem;
+    }
+    footer .copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 590px){
+    form{
+        width: 28rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .form-group { 
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 65px;
+    }
+}
+@media only screen and (max-width: 320px){
+    footer .dasc-links h6 {
+        font-size: 1.3rem;
+    }
+    footer .dasc-links h6::before {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+@media only screen and (min-width: 240px) and (max-width: 768px) and (max-height: 640px){
+    header {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+@media only screen and (min-width: 240px) and (max-width: 550px){ /*small phones*/
+    /*----header-----------------------------------------------------------------------*/
+        header{
+            padding: 1rem 1.8rem;
+            /*background: rgba(0, 0, 0, 0.3);*/
+        }
+        header.sticky{
+            padding: 2rem 3rem;
+            /*background: rgba(0, 0, 0, 0.3);*/
+        }
+        header .logo{
+            content: url(../images/icons/logo_and_dot-ico/visible.svg);
+            width: 2.8rem;
+            height: auto;
+        }
+        header.sticky .logo,
+        header.sticky .logo::after{
+            font-size: 0.8rem;
+    
+            margin-left: -0.5rem;
+            overflow: unset;
+        }
+        .hamburger_icon {
+            top: 2.5rem;
+            right: 0.5rem;
+        }
+        .hamburger_icon span{
+            width:60%;
+        }
+        header.sticky .hamburger_icon{
+            top: 1.3rem;
+            right: 0.5rem;
+        }
+        .hamburger_icon span:nth-child(1){
+            top: -13px;
+        }
+        header.sticky .hamburger_icon span:nth-child(1){
+            top: -8px;
+        }
+        #nav-menu4:checked ~ .hamburger_icon > span:nth-child(1) {
+            top: -24px;
+        }
+        header.sticky #nav-menu4:checked ~ .hamburger_icon > span:nth-child(1) {
+            -webkit-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+            -moz-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+            -o-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+            -ms-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+            -khtml-animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+            animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    
+            -webkit-animation-delay: 1.1s;
+            -moz-animation-delay: 1.1s;
+            -o-animation-delay: 1.1s;
+            -ms-animation-delay: 1.1s;
+            -khtml-animation-delay: 1.1s;
+            animation-delay: 1.1s;
+            top: -23px;
+        }
+        .hamburger_icon span:nth-child(2){
+            top: 0;
+        }
+        header.sticky .hamburger_icon span:nth-child(2){
+            top: 5px;
+        }
+        .hamburger_icon span:nth-child(3){
+            top: 13px;
+        }
+        header.sticky .hamburger_icon span:nth-child(3) {
+            top: 18px;
+        }
+        #nav-menu4:checked ~ .hamburger_icon > span:nth-child(3) {
+            top: 15px;
+            left: 0px;
+        }
+        /*------------------------------------------------------------banners--------------*/
+        main .banner .banner-content-1,
+        main .banner .banner-content-2,
+        main .banner .banner-content-3,
+        main .banner .banner-content-4{
+            padding: 2rem;
+            z-index: 4;
+        }
+        main .banner .banner-content-1 h3,
+        main .banner .banner-content-2 h3,
+        main .banner .banner-content-3 h3,
+        main .banner .banner-content-4 h3{
+            font-size: 1.4rem;
+        }
+        main .banner .banner-content-1 p,
+    
+        main .banner .banner-content-2 p:nth-child(2),
+        main .banner .banner-content-2 p:nth-child(3),
+    
+        main .banner .banner-content-4 p
+        {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+        main .banner .banner-content-3 p{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        main .banner .banner-content-1 button,
+        main .banner .banner-content-2 .btn-2,
+        main .banner .banner-content-3 .btn-3,
+        main .banner .banner-content-4 .btn-4{
+            padding: 0.5rem 1.5rem;
+            margin-top: 1.3rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.05rem;
+        }
+        /*------------------------------------------------------------banner-1--------------*/
+        main .banner .banner-content-1 button::before{
+            position: absolute;
+            content: "";
+            opacity: 0;
+            border-radius: 5rem;
+            background-image: linear-gradient(to right, #ffb8d0 0%, #aa0017 99%);
+            padding: 0.8rem 3.5rem;
+        }
+        main .banner .banner-content-1 button:hover::before{
+            opacity: 1;
+        }
+        /*------------------------------------------------------------banner-2--------------*/
+        main .banner .banner-content-2 p:nth-child(3){
+            margin-top: 0;
+        }
+        /*------------------------------------------------------------banner-3--------------*/
+        .dropdown:hover .dropdown-show-versions {
+            gap: 0.0003rem;
+        }
+        .dropdown-show-versions a {
+            padding: 0.8rem;
+            gap: 0.3rem;
+        }
+        .dropdown-show-versions a span {
+            font-size: 0.8rem;
+        }
+        .dropdown-show-versions a img {
+            width: 1rem;
+        }
+        /*------------------------------------------------------------banner-4--------------*/
+        main .banner .banner-content-4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main .banner .banner-content-4 h3,
+        main .banner .banner-content-4 p{
+            text-align: center;
+        }
+        main .banner .banner-content-4 .btn-4{
+            align-self: center;
+        }
+        /*------------------------------------------------------------indicators------------*/
+        .prev, .next{
+            opacity: 0;
+        }
+        .prev-bar, .next-bar {
+            width: 10%;
+            height: 100vh;
+            transition: 0.6s ease;
+            z-index: 4;
+            opacity: 0;
+    
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            -ms-appearance: none;
+            -khtml-appearance: none;
+            appearance: none;
+        }
+        .prev-bar:hover, .next-bar:hover {
+            background-color: rgba(0,0,0,0.0);
+    
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            -ms-appearance: none;
+            -khtml-appearance: none;
+            appearance: none;
+        }
+        .slideshow-legend {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 92vh 2px;
+        }
+        .slideshow-legend.active, .slideshow-legend:hover{
+            height: 11px;
+            width: 11px;
+        }
+        
+    h6 {
+        font-size: 0.7rem;
+        margin-top: 0.85rem;
+    }
+    h5 {
+        font-size: 1.3rem;
+    }
+    .aboutus .the-company .mission .img-container img,
+    .aboutus .the-company .vision .img-container img {
+        width: 4rem;
+    }
+    
+    .aboutus .the-company .mission,
+    .aboutus .the-company .vision {
+        width: 100%;
+    }
+    .aboutus .intro p,
+    .contactus .intro p{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    
+    .aboutus .the-company .mission .texts, 
+    .aboutus .the-company .vision .texts
+    {
+        width: fit-content;
+        height: fit-content;
+        width: -moz-fit-content;
+        height: -moz-fit-content;
+    }
+    .definition ul li, 
+    .aboutus .the-company .mission .texts p, 
+    .aboutus .the-company .vision .texts p {
+        font-size: 0.6rem;
+    }
+    .aboutus .the-team .column .team-member h4{
+        font-size: 1.3rem;
+    }
+    .aboutus .the-team .column .team-member h3 {
+        font-size: 0.9rem;
+    }
+
+    .aboutus .the-team .column .team-member ul li,
+    .aboutus .the-team .column .team-member p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .aboutus .the-team .column .team-member p{
+        line-height: 0.9rem;
+    }
+    .img-box {
+        width: 35%;
+        margin: -1rem auto;
+    }
+    .definition {
+        margin: -20.5rem auto;
+    }
+    .prevCoreProduct, .nextCoreProduct {
+        height: 1rem;
+        width: 1rem;
+    }
+    .aboutus,
+    .contactus,
+    .coreProducts,
+    .ourproducts {
+        padding: 1rem;
+    }
+    .products .product {
+        gap: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        padding: 0 0.8rem;
+    }
+    .gray-code {
+        flex-direction: column;
+    }
+    .modal {
+        padding-top: 2rem;
+    }
+    .modal-content {
+        padding: 1rem;
+    }
+    .definition h5, 
+    .modal-header h2, 
+    .modal-body h2 {
+        font-size: 1rem;
+    }
+    .modal-icon-core-product {
+        width: 5rem;
+        height: 5rem;
+        top: 4rem;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px){
+    form{
+        width: 18rem;
+    }
+    .form-group {
+        gap: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 240px) and (max-height: 499px){
+    header, h6, h5, .expand-window, main, section, footer, .ourproducts, div{
+        display: none;
+    }
+    .expand-window{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 50vh;
+    }
+}
+@media only screen and (max-width: 239px){
+    header, h6, h5, .expand-window, main, section, footer, .ourproducts, div{
+        display: none;
+    }
+    .not-supported-device{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 5rem;
+    }
+    .not-supported-device img{
+        width: 80%;
+        height: auto;
+    }
+    .not-supported-device p{
+        margin-top: 1rem;
+        font-size: 7vw;
+    }
+}

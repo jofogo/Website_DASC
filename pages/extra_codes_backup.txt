@@ -1,0 +1,40 @@
+
+//----------------------------extra codes
+/* I do know how to make this work by adding an event to the submit button on submit. I mean, it works?? 🥴
+but the email used isn't receiving anything. **AJAX thing.**
+const input = document.getElementById("email_test");
+const submit = document.getElementById("submit-my-form-1");
+const form = document.getElementById("my-form");
+const email = document.getElementById("email_test").value;
+const errorElement = document.getElementById('error');
+const successMsg = document.getElementById('success-msg');
+const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+const pattern2 = /^[^ ]+@[^ ]+\.[a-z]{1,}$/;
+const emailIsValid = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+submit.addEventListener("click", (e) => {
+    e.preventDefault();
+    if(input.value === "") {
+        input.classList.add("apply-shake");
+        input.style.boxShadow = " 0 0 3px #fc0d05";
+        errorElement.innerHTML = 'Please add an e-mail address!';
+        return false;
+    }
+    if (!(input.value.includes('.') && (input.value.includes('@')))) {
+        input.classList.add("apply-shake");
+        input.style.boxShadow = " 0 0 3px #fc0d05";
+        errorElement.innerHTML = 'Sorry, not a valid e-mail address';
+        return false;
+    }
+    if (!emailIsValid(input.value)) {
+        input.classList.add("apply-shake");
+        input.style.boxShadow = " 0 0 3px #fc0d05";
+        errorElement.innerHTML = 'Please enter a valid email address.';
+        return false;
+    }
+    e.preventDefault();
+    window.location.href="https://khayevillafuerte.mfs.gg/TcjB8M3"; 
+    return false;
+});*/

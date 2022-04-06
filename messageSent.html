@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Message Sent</title>
+
+  <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+  <meta name="theme-color" content="#b30000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="coverage" content="Worldwide">
+  <meta name="url" content="https://www.da2001.com">
+  <meta name="referrer" content="origin">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="icon" href="./images/icons/logo_and_dot-ico/message-sent.ico">
+  <title>Document</title>
+  <style>
+    @font-face{
+      font-family: 'Avenir_Black';
+      src: url('../fonts/Avenir/Avenir-Black.eot');
+      src: url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+      url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
+      url('../fonts/Avenir/Avenir-Black.ttf') format('truetype'),
+      url('../fonts/Avenir/Avenir-Black.svg#Avenir-Black') format('svg');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face{
+      font-family: 'Avenir_Book';
+      src: url('../fonts/Avenir/Avenir-Book.eot');
+      src: url('../fonts/Avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Avenir/Avenir-Book.woff2') format('woff2'),
+      url('../fonts/Avenir/Avenir-Book.woff') format('woff'),
+      url('../fonts/Avenir/Avenir-Book.ttf') format('truetype'),
+      url('../fonts/Avenir/Avenir-Book.svg#Avenir-Book') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    .Message-sent{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+      z-index: 999999;
+    }
+    .Message-sent::after{
+      content: "";
+      position: absolute;
+      background: url("./images/slides/banner-60vh/1x/sent.gif") no-repeat center;
+      background-size: 80%;
+      opacity: 0.05;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width:100%;
+      height:100%;
+      z-index: -1;
+    }
+    .Message-sent h2{
+      font-family: Avenir_Black;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.0155rem;
+      color: rgb(3, 17, 98);
+    }
+    .Message-sent span{
+      font-family:"Avenir_Book";
+      font-size: 1rem;
+      margin-top: 0.1rem;
+      letter-spacing: 0.15rem;
+    }
+  </style>
+</head>
+<body onload="winClose();">
+  <section class="Message-sent" id="Message-sent" data-aos="zoom-in">
+    <h2 data-aos="zoom-in-down">Message sent!</h2>
+    <span data-aos="zoom-in-up">LOADING...</span>
+  </section>
+  <script>
+    function winClose() {
+      window.setTimeout("window.close();",3000)
+    }
+
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+</body>
+</html>
