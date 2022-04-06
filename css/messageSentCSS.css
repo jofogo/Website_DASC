@@ -35,7 +35,7 @@
     .Message-sent::after{
       content: "";
       position: absolute;
-      background: url("./images/slides/banner-60vh/1x/sent.gif") no-repeat center;
+      background: url(".../images/slides/banner-60vh/1x/sent.gif") no-repeat center;
       background-size: 80%;
       opacity: 0.05;
       top: 0;
